@@ -1,0 +1,88 @@
+extends ../layout/main
+
+block title
+	|  Александр Логинов-Хореограф по свадебному танцу
+block bgbody
+	.teachers_bg.site_head
+		.site_title
+			span -в ритме любви-
+			h1 Студия свадебного танца
+		a(href="#").scrollb
+			img.scroll(src="static/img/mo.png", alt="alt")
+block content
+	section.teacher_single.white
+		.container
+			.row
+				.col-md-12
+					h2 Александр Логинов
+					h3 Хореограф по свадебному танцу
+					.li_pages
+						a(href="#") Главная 
+						a(href="#") - Хореографы
+						span  - Александр Логинов
+					.teacher_resume
+						.col-md-5.col-sm-4.col-xs-12
+							img.teachers_photo(src="static/img/teachers/1.png", alt="alt")
+							span Немного о себе:
+							p Мне было где-то 12 или 13 лет, когда я понял что танцы – это моё. Родители меня никогда не заставляли, говорили: «твой выбор – это твой выбор, мы в любом случае его уважаем». Как-то однажды, я случайно оказался на одном концерте в ДК. Там было много выступлений, большая программа и танцевал какой-то коллектив. Танцевали так хорошо и так заразительно, что заразили этим и меня. Я сразу же решил записаться на танцы. И ни сколько не смущало, что там танцевали в парах. Мне это нравилось. Это были спортивные - бальные танцы. Позанимавшись примерно 2-3 недели (это очень мало) мне предложили поехать на конкурс. Мальчиков было мало в клубе. Я, конечно же, согласился, хотя и понятия не имел, что это такое. У меня не оказалось ни специальных  брюк, ни обуви, только белая рубашка. И одел то, что было. Тогда к всеобщему удивлению мы заняли третье место. Пар было очень много. Никто не верил. Вот так я и решил себя связать с танцами и хореографией.
+						.col-md-7.col-sm-8.col-xs-12
+							ul Краткая информация:
+								li Действующий танцор (спортивные-бальные танцы)
+								li Руководитель проекта "Ты со мной" (студия  свадебного танца, #[a(href="http://www.agency.tisomnoy.ru/" target="_blank") свадебное агентство])
+								li Участник проекта "Танцы со звездами - 2013" 8 сезон
+								li Участник и финалист российских и международных турниров  IDSF
+								li Танцевальный стаж: более 15 лет
+								li Опыт работы в качестве хореографа: 7 лет
+								li Опыт постановок свадебных танцев: 5 лет
+								li Профиль педагога: постановка свадебного танца
+							.item
+								span Город:
+								p Москва
+							.item
+								span Специализация:
+								p Бальные танцы, латина, стандарт, свинг, танго, хореография
+							.row.ts_buttons
+									a.but_appl_wd(href="#application_wd").tran_grad Записаться на урок
+									button.tran_grad Смотреть адреса залов
+							span О своей работе хореографом:
+							p Работать хореографом я начал 7 лет назад. Был опыт работы как с детьми (6-7 лет), так и со взрослыми парами. Последние 5 лет занимаюсь постановками свадебных танцев и это очень интересно. Мне нравится видеть, как пара с вдохновением занимается, как им это нравится и какое удовольствие от танцев они получают. Нравится и то, что это взрослые люди с осмысленным подходом к делу. Я очень рад тому, что занимаюсь свадебными постановками.
+							span О свадебном танце:
+							p Конечно это очень яркое, значимое действие. Пара демонстрирует не только то, что она умеет двигаться в такт музыки, но еще и свои искренние чувства. В танце чувства и эмоции не возможно скрыть. В свадебном танце они более, чем искрение.
+							p Интервью для телеканала "МИР" - #[a(href="http://mir24.tv/video_news/10689541/10689398") Смотреть]
+		.container.teacher_portfolio
+			.row
+				.col-lg-12
+					h4 Портфолио хореографа
+					h3 Александр Логинов
+					span фотографии
+					.portfolio_photo.bor
+						img.port_photo(src="static/img/teachers/4.jpg", alt="alt")
+						img.port_photo(src="static/img/teachers/5.jpg", alt="alt")
+						img.port_photo(src="static/img/teachers/8.jpg", alt="alt")
+						img.port_photo(src="static/img/teachers/7.jpg", alt="alt")
+						img.port_photo(src="static/img/teachers/8.jpg", alt="alt")
+						img.port_photo(src="static/img/teachers/4.jpg", alt="alt")
+						img.port_photo(src="static/img/teachers/5.jpg", alt="alt")
+						img.port_photo(src="static/img/teachers/7.jpg", alt="alt")
+					span Видео
+					.portfolio_video.bor
+						iframe(width="500" height="315" src="https://www.youtube.com/embed/D-mY0oE61Nc" frameborder="0" allowfullscreen)
+						iframe(width="500" height="315" src="https://www.youtube.com/embed/D-mY0oE61Nc" frameborder="0" allowfullscreen)
+						iframe(width="500" height="315" src="https://www.youtube.com/embed/D-mY0oE61Nc" frameborder="0" allowfullscreen)
+						iframe(width="500" height="315" src="https://www.youtube.com/embed/D-mY0oE61Nc" frameborder="0" allowfullscreen)
+		#application_wd.mfp-hide
+			h4 Запись на постановку свадебного танца
+			h3 Хореограф Александр Логинов
+			form.appl_form.wd
+				label(for="wname") Имя:
+				input#wname(type="text"  placeholder="Введите имя")
+				label(for="wmail") Электронная почта:
+				input#wmail(type="text" placeholder="Введите адрес электронной почты")
+				label(for="wmess") Сообщение:
+				textarea#wmess(type="text" name="textarea" placeholder="Напишите дату свадьбы и все пожелания")
+				label(for="wphone") Мобильный телефон:
+				input#wphone(type="text" placeholder="Введите номер телефона")
+				span Проверка:
+				//здесь вставить капчу
+				input(type="submit" value="Отправить")
+

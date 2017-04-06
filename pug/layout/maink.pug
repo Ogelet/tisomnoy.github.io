@@ -1,0 +1,71 @@
+doctype html
+html(lang="ru-RU")
+	head
+		meta(charset="utf-8")
+		meta(http-equiv='X-UA-Compatible', content="IE = edge")
+		meta(name="viewport" content="width=device-width,initial-scale=1")
+		meta(name="keywords" content="")
+		link(rel="stylesheet" type='text/css' href="static/fonts/fonts.css")
+		link(rel="stylesheet" type='text/css' href="static/css/bootstrap-grid.min.css")
+		link(rel="stylesheet" href="static/libs/owlcarousel/owl.carousel.min.css")
+		link(rel="stylesheet" href="static/libs/owlcarousel/owl.theme.default.min.css")
+		link(rel="stylesheet" href="static/libs/font-awesome-4.7.0/css/font-awesome.min.css")
+		link(rel="stylesheet" type='text/css' href="static/css/main.css")
+		title
+			block title
+	body
+		include ../modules/header
+		.top_page
+			block bgbody
+		a(href="#").scrollt
+			img(src="static/img/scrollt.png", alt="alt")
+		a.but_appl(href="#application") Online заявка
+		#application.mfp-hide
+			form.appl_form
+				label(for="fname") Имя:
+				input#fname(type="text"  placeholder="Введите имя жениха и невесты")
+				label(for="fmail") Электронная почта:
+				input#fmail(type="text" placeholder="Введите адрес электронной почты")
+				label(for="fmess") Сообщение:
+				textarea#fmess(type="text" name="textarea" placeholder="Введите дату свадьбы, место обучения")
+				label(for="fphone") Мобильный телефон:
+				input#fphone(type="text" placeholder="Введите номер телефона")
+				p Выберите услугу:
+				.field
+					input#r1(type="checkbox" name="weeding dance")
+					label(for="r1") Постановка свадебного танца
+				.field
+					input#r2(type="checkbox" name="express")
+					label(for="r2") Экспресс обучение
+				.field
+					input#r3(type="checkbox" name="friend dance")
+					label(for="r3") Танец друзей
+				.field
+					input#r4(type="checkbox" name="parent dance")
+					label(for="r4") Танец родителей на свадьбу
+				.field
+					input#r5(type="checkbox" name="ballerinas")
+					label(for="r5") Танец с балеринами
+				.field
+					input#r6(type="checkbox" name="anniversary")
+					label(for="r6") Танец на годовщину
+				.field
+					input#r7(type="checkbox" name="another")
+					label(for="r7") Другое...
+				span Проверка:
+				//здесь вставить капчу
+				input(type="submit" value="Отправить")
+			.bottom_mess
+				p Мы свяжемся с Вами как можно быстрее
+		block content
+		include ../modules/footer
+		script(src="static/js/jquery.js")
+		script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+		script(src="static/js/libs.min.js")
+		script(src="static/js/mapK.js")
+		script(src="static/libs/owlcarousel/owl.carousel.min.js")
+		script(src="static/js/main.js")
+
+
+
+

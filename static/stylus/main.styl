@@ -1,0 +1,187 @@
+// Подключаем стили библиотек
+@import '_libs.styl'
+
+// Подключаем переменные
+@import '_vars.styl'
+
+// Подключаем спрайты (просто раскоментируем импорт при появлении PNG спрайтов)
+// @import '_sprite.styl'
+
+// Подключаем миксины
+@import '_mixins.styl'
+
+html 
+  line-height 1
+  font-size 14px
+
+body
+  font-family mainFont
+
+h1,h2,h3,h4,h5,h6
+  margin 0
+
+ul,li
+  margin 0
+  padding 0
+  list-style-type none
+  
+p
+  margin 0
+  
+a
+  text-decoration none
+  color black
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video
+  vertical-align middle
+  
+textarea
+  resize none
+
+section
+  position relative
+  margin-bottom 20px
+
+input,
+select,
+button
+  outline none
+
+*, *:before, *:after
+  box-sizing border-box
+  
+.hide
+  display none
+  
+.show
+  display block
+.show_answer
+  display block
+  
+::-moz-selection 
+  background: #b3d4fc;
+  text-shadow: none;
+  
+::selection 
+  background: #b3d4fc;
+  text-shadow: none;
+  
+.clearfix:before,
+.clearfix:after 
+  content: " ";
+  display: table;
+
+.clearfix:after 
+  clear: both;
+
+.clearfix 
+  *zoom: 1;
+
+.wrapper
+  width 100%
+  max-width 1000px
+  margin 0 auto
+
+
+
+// Общие стили
+@import '_common_styles.styl'
+
+// Стили шапки
+@import 'modules/_header.styl'
+
+// Стили меню
+@import 'modules/_menu.styl'
+
+// Стили главной страницы
+@import 'page/_index.styl'
+
+// Стили партнеры
+@import 'page/_partners.styl'
+
+// Стили учителя
+@import 'page/_teachers.styl'
+
+// Стили учитель
+@import 'page/_teacher_single.styl'
+
+// Стили музыка
+@import 'page/_music.styl'
+
+// Стили видео
+@import 'page/_video.styl'
+
+// Стили видео танца
+@import 'page/_video_dance.styl'
+
+// Стили краткое описание танца
+@import 'page/_about_dance.styl'
+
+// Стили цены и услуги
+@import 'page/_service_price.styl'
+
+// Стили отзывы
+@import 'page/_reviews.styl'
+
+// Стили О студии
+@import 'page/_about.styl'
+
+
+// Стили wedding-dance-award
+@import 'page/_wedding-dance-award.styl'
+
+// Стили wedding-dance-award
+@import 'page/_2015.styl'
+
+// Стили wedding-dance-award
+@import 'page/_2016.styl'
+
+
+// Стили wedding-dance-award
+@import 'page/_photo.styl'
+
+// Стили wedding-dance-award
+@import 'page/_merried.styl'
+
+// Стили wedding-dance-award
+@import 'page/_read.styl'
+
+// Стили wedding-dance-award
+@import 'page/_article_single.styl'
+
+// Стили wedding-dance-award
+@import 'page/_faq.styl'
+
+
+// Стили wedding-dance-award
+@import 'page/_news.styl'
+
+// Стили wedding-dance-award
+@import 'page/_loveis.styl'
+
+// Стили wedding-dance-award
+@import 'page/_show.styl'
+
+// Стили wedding-dance-award
+@import 'page/_vak.styl'
+
+// Стили wedding-dance-award
+@import 'page/_loveis-1.styl'
+
+// Стили wedding-dance-award
+@import 'page/_address.styl'
+
+// Стили wedding-dance-award
+@import 'page/_contacts.styl'
+
+
+// Стили футера
+@import 'modules/_footer.styl'
+
+// Стили медиазапросов
+@import '_media.styl'

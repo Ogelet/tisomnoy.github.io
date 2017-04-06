@@ -1,0 +1,32 @@
+extends ../layout/main
+
+block title
+	|Свинг:: Постановка свадебного танца "Ты со мной"
+block bgbody
+	.video_bg.site_head
+		.site_title
+			span -в ритме любви-
+			h1 Студия свадебного танца
+		a(href="#").scrollb
+			img.scroll(src="static/img/mo.png", alt="alt")
+block content
+	section.video_style_dance.white
+		.container
+			.row
+				.col-md-12
+					h3 Свинг на свадьбу
+					.li_pages
+						a(href="#") Главная 
+						a(href="#") - Видео свадебного танца
+						span - Свинг
+					p Свинг на свадьбу. Примеры постановок. Еще больше видео от студии есть на нашем официальном канале на #[a(href="#") Youtube]. Заходите, подписывайтесь, будем Вам рады.
+					#video_slide.bor.owl-carousel.owl-theme
+						iframe(width="660" height="415" src="https://www.youtube.com/embed/8cChUc5yFGo" frameborder="0" allowfullscreen)
+						iframe(width="660" height="415" src="https://www.youtube.com/embed/8cChUc5yFGo" frameborder="0" allowfullscreen)
+						iframe(width="660" height="415" src="https://www.youtube.com/embed/8cChUc5yFGo" frameborder="0" allowfullscreen)
+		.container
+			.row
+				.col-md-12
+					p.textp Не нашли нужное видео или не воспроизводится? Заходите на наш официальный канал на Youtube ,там Вы найдете очень много интересного.
+					a.tran_grad(href="#") Краткое описание танцев
+					a.tran_grad(href="#") Канал Youtube

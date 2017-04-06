@@ -1,0 +1,217 @@
+extends ../layout/main
+
+block title
+	| Лучший свадебный танец в Москве Студия свадебного танца -Ты со мной'
+block bgbody
+	.site_head.main_page_bg
+		.site_title
+			span -в ритме любви-
+			h1 Студия свадебного танца
+		a(href="#").scrollb
+			img.scroll(src="static/img/mo.png", alt="alt")
+block content
+	section.white.main-top
+		.container
+			.row
+				.col-md-12
+					h2 Дорогие молодожены
+					p Спасибо, что заглянули к нам.
+						br
+						|Мы оказываем полный цикл услуг по обучению и постановке первого танца для молодоженов в Москве.
+					#news_slide.owl-carousel.owl-theme
+						.slidewr
+							img.slide(src="static/img/slide1.jpg", alt="alt")
+							.slide_desc.sl1
+								span для первого танца
+								span Советы молодоженам
+								span Ценные советы
+								button.transp Подробнее
+						.slidewr
+							img.slide(src="static/img/slide2.jpg", alt="alt")
+							.slide_desc.sl2
+								span Все о
+								span cвадебном
+								span танце
+								button.transp Подробнее
+						.slidewr
+							img.slide(src="static/img/slide3.jpg", alt="alt")
+							.slide_desc.sl3
+								span Weedding Dance Award
+								span Сваденый танец года
+								button.transp Подробнее
+								button.transp.b2 На сайт Премии
+						.slidewr
+							img.slide(src="static/img/slide4.jpg", alt="alt")
+							.slide_desc.sl4
+								span Новая услуга
+								span с профессионалами
+								span Свадебный танец
+								button.transp Подробнее
+					span.group Новости
+					h3.dance_tit Свадебный танец
+	section.light
+		.container
+			.row
+				.col-lg-12
+					p #[strong Это] одно из ярких и впечатляющих действий,которое позволит раскрыть Вашу неповторимую историю любви. #[br]#[strong Долгожданный день] все ближе, Вас переполняет восторг и предвкушение #[strong счастливой жизни]? #[br] Хотите чувствовать себя уверенно и неотразимо ? #[br]Мечтаете приятно удивить своих гостей ? #[br]Желаете ощутить свободу, энергию и радость?#[br] Ищете интересные, захватывающие #[a(href="#")  уроки свадебного танца]#[br]в Москве с удобным графиком, профессиональными педагогами и доступными ценами?
+					button.grad Подробнее о постановке свадебного танца
+	section.advantages.white
+		.container
+			.row
+				.col-lg-12
+					mixin adv(image,title,text)
+						.advantage
+							img.adv(src="static/img/"+image, alt="alt")
+							h5=title
+							p=text
+					h2 Наши преимущества для Вас
+					#adv_list
+						+adv("adv1k.jpg","Одна из самых больших школ в России","Мы одна из самых больших специализированных танцевальных студий для молодоженов в России. Выберите Ваш город и наслаждайтесь танцем: Москва, Санкт-Петербург , Казань , Нижний  Новгород, Тула")
+						+adv("adv2.jpg","Работаем 7 дней в неделю.","Мы работаем для молодоженов Москвы 7 дней в неделю с 10:00 до 23:00 - Заказать  постановку свадебного танца можно очень быстро и просто: достаточно позвонить по бесплатному телефону 8 800 700 35 68 или 8 495 740 35 68 , запишитесь и приходите на уроки!")
+						+adv("adv3.jpg","Одна из самых больших школ в России","Мы одна из самых больших специализированных танцевальных студий для молодоженов в России. Выберите Ваш город и наслаждайтесь танцем: Москва, Санкт-Петербург , Казань , Нижний  Новгород, Тула")
+						+adv("adv4.jpg","Работаем 7 дней в неделю.","Мы работаем для молодоженов Москвы 7 дней в неделю с 10:00 до 23:00 - Заказать  постановку свадебного танца можно очень быстро и просто: достаточно позвонить по бесплатному телефону 8 800 700 35 68 или 8 495 740 35 68 , запишитесь и приходите на уроки!")
+						+adv("adv5.jpg","Отзывы счастливых молодоженов","- Отзывы, которые оставили наши счастливые выпускники - большая ценность для нас. Мы гордимся нашими учениками! Мы знаем о свадебном танце все и хотим с Вами этим поделится. Узнайте больше о первом танце на свадьбу: статьи | советы | проекты | FAQ | Love is")
+						+adv("adv6.jpg","Отзывы счастливых молодоженов","- Отзывы, которые оставили наши счастливые выпускники - большая ценность для нас. Мы гордимся нашими учениками! Мы знаем о свадебном танце все и хотим с Вами этим поделится. Узнайте больше о первом танце на свадьбу: статьи | советы | проекты | FAQ | Love is")
+					.couple_photo
+						h3 Почему #[span первый танец] так важен:
+						.col-md-5.col-sm-6.col-xs-12
+							span.gr Смотрите фото наших пар
+							img(src="static/img/couple.jpg", alt="photo")
+						.col-md-7.col-sm-6.col-xs-12
+							ul
+								li - Это Ваша история любви, которую Вы сможете выразить на самом понятном языке в мире - языке движений тела.
+								li - Это одно из самых ярких, запоминающих событий. Этот момент Вы будете вспоминать долгие годы.
+								li - Красивый свадебный танец молодых - это прекрасная возможность научиться танцевать в паре!
+								li - Подготовка происходит по индивидуально.
+								li - Для женихов: в процессе обучения, Вы научитесь вести, направлять свою даму, что не может не вызвать восторга у Вашей будущей невесты.
+								li - Для невесты: в процессе уроков, Вы научитесь слышать,чувствовать партнера. Осознавать, что ты понимаешь  своего любимого без слов - бесценно!
+								li - Самые эффектные кадры со свадьбы - это первый танец!
+							button.purp Смотреть фотографии >
+	section.our_partners.white
+		.container
+			.row
+				.col-lg-12
+						span.gr Партнёры и клиенты студии
+						a(href="#") Перейти в партнёры
+						.partners_logo
+							.parnter_item
+								a(href="#")
+									img(src="static/img/p1.jpg", alt="partners_logo")
+							.parnter_item
+								a(href="#")
+									img(src="static/img/p2.jpg", alt="partners_logo")
+							.parnter_item
+								a(href="#")
+									img(src="static/img/p3.png", alt="partners_logo")
+							.parnter_item
+								a(href="#")
+									img(src="static/img/p4.jpg", alt="partners_logo")
+							.parnter_item
+								a(href="#")
+									img(src="static/img/p5.png", alt="partners_logo")
+							.parnter_item
+								a(href="#")
+									img(src="static/img/p6.png", alt="partners_logo")
+							.parnter_item
+								a(href="#")
+									img(src="static/img/partn.png", alt="partners_logo")
+							.parnter_item
+								a(href="#")
+									img(src="static/img/partn2.png", alt="partners_logo")
+							.parnter_item
+								a(href="#")
+									img(src="static/img/partn3.png", alt="partners_logo")
+							.parnter_item
+								a(href="#")
+									img(src="static/img/partn4.png", alt="partners_logo")
+							.parnter_item
+								a(href="#")
+									img(src="static/img/partn1.png", alt="partners_logo")
+	section.statistic
+		.container
+			.row
+				.col-lg-12
+					h2 Статистика нашей студии
+					.col-lg-4.col-md-4.col-sm-12.col-xs-12
+						.statistic_item
+							img(src="static/img/stat1.png", alt="partners_logo")
+							span 1000
+							p Более молодожёнов
+					.col-lg-4.col-md-4.col-sm-12.col-xs-12
+						.statistic_item
+							img(src="static/img/stat2.png", alt="partners_logo")
+							span 300
+							p Более уникальных постановок
+					.col-lg-4.col-md-4.col-sm-12.col-xs-12
+						.statistic_item
+							img(src="static/img/stat3.png", alt="partners_logo")
+							span 10
+							p Более крупных мероприятий
+	section.about_lessons
+		.container
+			.row
+				.col-lg-12
+					h2 С заботой о каждой паре
+					p Именно поэтому, мы стараемся сделать наши уроки:
+					.col-lg-4.col-md-4.col-sm-4.col-xs-12
+						.about
+							img(src="static/img/ab.jpg", alt="alt")
+							.about_info.info1
+								h4 Красиво
+								p Наша задача - создавать красивые, уникальные композиции для каждой пары. Вам доступен не только свадебный танец, но и #[a(href="#") свадебное агентство]
+								img.ic(src="static/img/ab4.png", alt="alt")
+					.col-lg-4.col-md-4.col-sm-4.col-xs-12
+						.about
+							img(src="static/img/ab2.jpg", alt="alt")
+							.about_info.info2
+								h4 Интересно
+								p Уроки проходят в приятной, легкой атмосфере. Наши #[a(href="#") хореографы] постараются, чтобы каждый урок был интересным и уникальным.
+								img.ic(src="static/img/ab5.png", alt="alt")
+					.col-lg-4.col-md-4.col-sm-4.col-xs-12
+						.about
+							img(src="static/img/ab3.jpg", alt="alt")
+							.about_info.info3
+								h4 Доступно
+								p Благодаря невысокой #[a(href="#") стоимости] и удобному месту расположению, наши занятия первого танца может позволить себе каждая пара.
+								img.ic(src="static/img/ab6.png", alt="alt")
+	section.dance_staging
+		.container
+			.row
+				.col-lg-12
+					.video_dance
+						h2 Постановка свадебного танца в школе "Ты со мной"
+						p Смотрите видео наших постановок
+						.video_wrap
+							.col-lg-4.col-md-4.col-sm-4.col-xs-12
+								iframe(width="345" height="190" src="https://www.youtube.com/embed/	CLSMbqe133I?list=PLnTfIiuYD9tihkaVssidxgYC0kXb9v94Y" frameborder="0" allowfullscreen)
+							.col-lg-4.col-md-4.col-sm-4.col-xs-12
+								iframe(width="345" height="190" src="https://www.youtube.com/embed/	CLSMbqe133I?list=PLnTfIiuYD9tihkaVssidxgYC0kXb9v94Y" frameborder="0" allowfullscreen)
+							.col-lg-4.col-md-4.col-sm-4.col-xs-12
+								iframe(width="345" height="190" src="https://www.youtube.com/embed/	CLSMbqe133I?list=PLnTfIiuYD9tihkaVssidxgYC0kXb9v94Y" frameborder="0" allowfullscreen)
+								a(href="#") Перейти на канал Youtube
+					.col-lg-12
+						h3 Танцуйте в ритме любви
+	section.question
+		.container
+			.row
+				.col-lg-12
+					h4 Есть вопросы? Пишите нам. #[br] Мы с удовольствием ответим на них ;)
+					form.quest
+						field
+							label(for="qname") Имя:
+							input#qname(type="text"  placeholder="Как Вас зовут")
+						field
+							label(for="qmail") Email:
+							input#qmail(type="text" placeholder="Укажите почту")
+						field
+							label(for="qmess") Сообщение:
+							textarea#qmess(type="text" name="textarea" placeholder="Напишите Ваш вопрос или предложение")
+						button.b_white Отправить
+						span Проверка:
+						// капча
+
+
+
+
+
+
